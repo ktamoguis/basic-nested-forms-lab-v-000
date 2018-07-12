@@ -14,9 +14,9 @@ class RecipesController < ApplicationController
   end
 
   def create
-    binding.pry
+    #binding.pry
     @recipe = Recipe.create(recipe_params)
-    binding.pry
+    #binding.pry
     redirect_to recipe_path
   end
 
